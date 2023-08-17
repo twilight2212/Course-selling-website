@@ -13,6 +13,6 @@ app.use("/admin", adminRouter);
 app.use("/users", userRoute);
 
 //connect to mongodb
-mongoose.connect('mongodb+srv://snehaljaiswal2212:rwnAWKhrSYweu59q@cluster0.da8qxz7.mongodb.net/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
+mongoose.connect('mongodb://localhost:27017/courses', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "courses" });
 
 app.listen(3000, () => {console.log('listening to port 3000')})
